@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="_UC0_login">
@@ -52,7 +54,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/DemoAppConfig/parameters/by_tool/ALL">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/DemoAppConfig/parameters/by_tool/ALL" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -108,7 +110,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/accountservice/ws/GetAccountConfigurationRequest">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/accountservice/ws/GetAccountConfigurationRequest" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -187,7 +189,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -243,7 +245,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_4_https://www.advantageonlineshopping.com/catalog/api/v1/deals/search?dealOfTheDay=true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_4_https://www.advantageonlineshopping.com/catalog/api/v1/deals/search?dealOfTheDay=true" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -429,12 +431,6 @@
               </RegexExtractor>
               <hashTree/>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
-              <boolProp name="displayJMeterProperties">false</boolProp>
-              <boolProp name="displayJMeterVariables">true</boolProp>
-              <boolProp name="displaySystemProperties">false</boolProp>
-            </DebugSampler>
-            <hashTree/>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/order/api/v1/carts/201712642">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
@@ -490,7 +486,23 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">session</stringProp>
+                <stringProp name="RegexExtractor.regex">&quot;sessionId&quot;:&quot;(.*?)&quot;</stringProp>
+                <stringProp name="RegexExtractor.template"></stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">

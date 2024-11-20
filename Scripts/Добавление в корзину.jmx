@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Добавление в корзину">
@@ -39,7 +41,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/categories/4/products" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/categories/4/products">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -99,7 +101,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/catalog/api/v1/categories/attributes" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/catalog/api/v1/categories/attributes">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -155,7 +157,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/app/views/category-page.html" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/app/views/category-page.html">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -217,7 +219,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/categories/all_data" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/catalog/api/v1/categories/all_data">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -277,7 +279,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/catalog/api/v1/products/24" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/catalog/api/v1/products/24">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -337,7 +339,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories/4/products" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories/4/products">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -393,7 +395,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_4_https://www.advantageonlineshopping.com/app/views/product-page.html" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_4_https://www.advantageonlineshopping.com/app/views/product-page.html">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -488,7 +490,7 @@
                   <elementProp name="sessionId" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
                     <stringProp name="Argument.name">sessionId</stringProp>
-                    <stringProp name="Argument.value">C312B72C441972A3DCAC016C32797928</stringProp>
+                    <stringProp name="Argument.value">${session_g1}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                     <boolProp name="HTTPArgument.use_equals">true</boolProp>
                   </elementProp>
@@ -496,7 +498,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Host" elementType="Header">
                     <stringProp name="Header.name">Host</stringProp>
