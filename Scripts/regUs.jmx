@@ -5,6 +5,8 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined VariablesUser Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">
@@ -23,7 +25,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="page_1__non_title">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="page_1__non_title" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
@@ -380,12 +382,12 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="page_3__non_title">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="page_3__non_title" enabled="true">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
+            <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
               <collectionProp name="Arguments.arguments">
                 <elementProp name="login" elementType="Argument">
                   <stringProp name="Argument.name">login</stringProp>
@@ -405,7 +407,7 @@
               </collectionProp>
             </Arguments>
             <hashTree/>
-            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter">
+            <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
               <stringProp name="CounterConfig.start">0</stringProp>
               <stringProp name="CounterConfig.end"></stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
@@ -414,13 +416,13 @@
               <boolProp name="CounterConfig.per_user">false</boolProp>
             </CounterConfig>
             <hashTree/>
-            <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookie Manager">
+            <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="Cookie Manager" enabled="true">
               <collectionProp name="CookieManager.cookies"/>
               <boolProp name="CookieManager.clearEachIteration">false</boolProp>
               <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
             </CookieManager>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/accountservice/ws/AccountCreateRequest">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_1_https://www.advantageonlineshopping.com/accountservice/ws/AccountCreateRequest" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -503,7 +505,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/accountservice/ws/AccountLoginRequest">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Sampler page_1__non_title_2_https://www.advantageonlineshopping.com/accountservice/ws/AccountLoginRequest" enabled="true">
               <stringProp name="HTTPSampler.domain">www.advantageonlineshopping.com</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -581,7 +583,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
                 <collectionProp name="Asserion.test_strings">
                   <stringProp name="51511">403</stringProp>
                 </collectionProp>
