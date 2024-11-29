@@ -134,20 +134,20 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_01" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC02_01">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация">
             <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC1_Авторизация.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC02" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC02">
             <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC2_Покупка_спец_предложения.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -197,20 +197,20 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_01" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC03_01">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация">
             <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC1_Авторизация.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC03" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC03">
             <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC3_Оплата_популярного_товара.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -249,7 +249,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC04" enabled="false">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="UC04">
         <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -260,17 +260,17 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_01" enabled="true">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="UC04_01">
           <boolProp name="TransactionController.parent">true</boolProp>
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация" enabled="true">
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="Авторизация">
             <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC1_Авторизация.jmx</stringProp>
           </IncludeController>
           <hashTree/>
-          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC04" enabled="true">
-            <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC4_Удаление_из_корзины.jmx</stringProp>
+          <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="UC04">
+            <stringProp name="IncludeController.includepath">C:\Users\User\Desktop\finalTask\Scripts\_UC4_Добавление_товара_в_корзину.jmx</stringProp>
           </IncludeController>
           <hashTree/>
           <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
@@ -438,7 +438,7 @@
           <hashTree/>
         </hashTree>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC02">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC02" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="1575942528">
             <stringProp name="50">2</stringProp>
@@ -483,7 +483,7 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
       </kg.apc.jmeter.threads.UltimateThreadGroup>
       <hashTree>
-        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="UC02_01">
+        <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="UC02_01" enabled="true">
           <collectionProp name="ModuleController.node_path">
             <stringProp name="764597751">Test Plan</stringProp>
             <stringProp name="764597751">Test Plan</stringProp>
@@ -492,19 +492,19 @@
           </collectionProp>
         </ModuleController>
         <hashTree/>
-        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="pacing2">
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="pacing2" enabled="true">
           <boolProp name="displayJMeterProperties">false</boolProp>
           <boolProp name="displayJMeterVariables">true</boolProp>
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
             <intProp name="calcMode">0</intProp>
             <stringProp name="throughput">${__groovy(60/Double.valueOf(vars.get(&quot;pacing2&quot;)))}</stringProp>
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -542,37 +542,37 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC03">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC03" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-13919847">
+          <collectionProp name="1611036326">
             <stringProp name="51">3</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46971372">18300</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1149863710">
+          <collectionProp name="2141785291">
             <stringProp name="51">3</stringProp>
             <stringProp name="1572957">3660</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1987998686">
+          <collectionProp name="655889497">
             <stringProp name="51">3</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1331461598">
+          <collectionProp name="905529049">
             <stringProp name="51">3</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="2125370722">
+          <collectionProp name="1739640395">
             <stringProp name="51">3</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="1722">60</stringProp>
@@ -646,37 +646,37 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC04">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC04" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-13919847">
+          <collectionProp name="1611036326">
             <stringProp name="51">3</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46971372">18300</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1149863710">
+          <collectionProp name="2141785291">
             <stringProp name="51">3</stringProp>
             <stringProp name="1572957">3660</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1987998686">
+          <collectionProp name="655889497">
             <stringProp name="51">3</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1331461598">
+          <collectionProp name="905529049">
             <stringProp name="51">3</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="2125370722">
+          <collectionProp name="1739640395">
             <stringProp name="51">3</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="1722">60</stringProp>
@@ -750,37 +750,37 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC05">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC05" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
-          <collectionProp name="-801683260">
+          <collectionProp name="823272913">
             <stringProp name="49">1</stringProp>
             <stringProp name="0">0</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46971372">18300</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-1937627123">
+          <collectionProp name="1354021878">
             <stringProp name="49">1</stringProp>
             <stringProp name="1572957">3660</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="1519205197">
+          <collectionProp name="-131873916">
             <stringProp name="49">1</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="-2119225011">
+          <collectionProp name="117765636">
             <stringProp name="49">1</stringProp>
             <stringProp name="46739058">10980</stringProp>
             <stringProp name="1722">60</stringProp>
             <stringProp name="1689114">7320</stringProp>
             <stringProp name="48">0</stringProp>
           </collectionProp>
-          <collectionProp name="1337607309">
+          <collectionProp name="951876982">
             <stringProp name="49">1</stringProp>
             <stringProp name="46855215">14640</stringProp>
             <stringProp name="1722">60</stringProp>
@@ -854,7 +854,7 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC06">
+      <kg.apc.jmeter.threads.UltimateThreadGroup guiclass="kg.apc.jmeter.threads.UltimateThreadGroupGui" testclass="kg.apc.jmeter.threads.UltimateThreadGroup" testname="UC06" enabled="false">
         <collectionProp name="ultimatethreadgroupdata">
           <collectionProp name="-792977036">
             <stringProp name="54">6</stringProp>
