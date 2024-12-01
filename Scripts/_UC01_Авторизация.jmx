@@ -39,7 +39,7 @@
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_1_https://www.advantageonlineshopping.com/catalog/api/v1/DemoAppConfig/parameters/by_tool/ALL">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_1_https://www.advantageonlineshopping.com/catalog/api/v1/DemoAppConfig/parameters/by_tool/ALL" enabled="true">
               <stringProp name="HTTPSampler.path">/catalog/api/v1/DemoAppConfig/parameters/by_tool/ALL</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -102,7 +102,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_2_https://www.advantageonlineshopping.com/accountservice/ws/GetAccountConfigurationRequest">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_2_https://www.advantageonlineshopping.com/accountservice/ws/GetAccountConfigurationRequest" enabled="true">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">/accountservice/ws/GetAccountConfigurationRequest</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -178,7 +178,7 @@
               </HeaderManager>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_3_https://www.advantageonlineshopping.com/catalog/api/v1/categories" enabled="true">
               <stringProp name="HTTPSampler.path">/catalog/api/v1/categories</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -241,7 +241,7 @@
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_4_https://www.advantageonlineshopping.com/catalog/api/v1/deals/search?dealOfTheDay=true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S01_Открытие_главной_страницы_4_https://www.advantageonlineshopping.com/catalog/api/v1/deals/search?dealOfTheDay=true" enabled="true">
               <stringProp name="HTTPSampler.path">/catalog/api/v1/deals/search</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -303,12 +303,12 @@
               <hashTree/>
             </hashTree>
           </hashTree>
-          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="_UC01_S02_Авторизация" enabled="true">
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="_UC01_S02_Авторизация">
             <boolProp name="TransactionController.parent">true</boolProp>
             <boolProp name="TransactionController.includeTimers">false</boolProp>
           </TransactionController>
           <hashTree>
-            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager" enabled="true">
+            <AuthManager guiclass="AuthPanel" testclass="AuthManager" testname="HTTP Authorization Manager">
               <collectionProp name="AuthManager.auth_list">
                 <elementProp name="" elementType="Authorization">
                   <stringProp name="Authorization.url">https://www.advantageonlineshopping.com:443</stringProp>
@@ -321,7 +321,7 @@
               <boolProp name="AuthManager.controlledByThreadGroup">false</boolProp>
             </AuthManager>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S02_Авторизация_1_https://www.advantageonlineshopping.com/accountservice/ws/AccountLoginRequest" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S02_Авторизация_1_https://www.advantageonlineshopping.com/accountservice/ws/AccountLoginRequest">
               <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
               <stringProp name="HTTPSampler.path">/accountservice/ws/AccountLoginRequest</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -339,7 +339,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Header Manager" enabled="true">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Header Manager">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Host" elementType="Header">
                     <stringProp name="Header.name">Host</stringProp>
@@ -400,17 +400,17 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion">
                 <collectionProp name="Asserion.test_strings">
-                  <stringProp name="51511">403</stringProp>
+                  <stringProp name="51509">401</stringProp>
                 </collectionProp>
                 <stringProp name="Assertion.custom_message"></stringProp>
-                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
                 <boolProp name="Assertion.assume_success">false</boolProp>
                 <intProp name="Assertion.test_type">20</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="usID">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">usID</stringProp>
                 <stringProp name="RegexExtractor.regex">&lt;ns2:userId&gt;(.*?)&lt;/ns2:userId&gt;</stringProp>
@@ -420,8 +420,18 @@
                 <stringProp name="RegexExtractor.match_number">1</stringProp>
               </RegexExtractor>
               <hashTree/>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="token">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">token</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;ns2:t_authorization&gt;(.*?)&lt;/ns2:t_authorization&gt;</stringProp>
+                <stringProp name="RegexExtractor.template"></stringProp>
+                <stringProp name="RegexExtractor.default"></stringProp>
+                <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S02_Авторизация_2_https://www.advantageonlineshopping.com/order/api/v1/carts/201712642" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="_UC01_S02_Авторизация_2_https://www.advantageonlineshopping.com/order/api/v1/carts/201712642">
               <stringProp name="HTTPSampler.path">/order/api/v1/carts/${usID_g1}</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <stringProp name="HTTPSampler.method">GET</stringProp>
@@ -473,7 +483,7 @@
                 </collectionProp>
               </HeaderManager>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Regular Expression Extractor" enabled="true">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="sessionid" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">session</stringProp>
                 <stringProp name="RegexExtractor.regex">&quot;sessionId&quot;:&quot;(.*?)&quot;</stringProp>
